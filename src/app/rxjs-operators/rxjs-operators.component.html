@@ -1,0 +1,7 @@
+<h3>backoffRetry</h3>
+<p>
+  retry in 0 second after error, ..., retry in 4 second after error (callback
+  since max attemp reach), retry in every 5 seconds
+</p>
+<p>timer: {{ timer$ | async }} seconds</p>
+<p *ngFor="let log of logs">{{ log }}</p>

@@ -29,7 +29,7 @@
     "@cwj0911/ngutil-common-behavior-mixins": "0.0.2",
     "@cwj0911/ngutil-image-svg-fallback": "0.0.2",
     "@cwj0911/ngutil-refetch-on-stale": "0.0.2",
-    "@cwj0911/ngutil-rxjs-operators": "0.0.2",
+    "@cwj0911/ngutil-rxjs-operators": "0.0.3",
     "@cwj0911/ngutil-selectable-grid": "0.0.2",
     "moment": "^2.29.1",
     "rxjs": "~6.6.0",
