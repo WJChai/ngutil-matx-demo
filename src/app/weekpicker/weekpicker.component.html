@@ -1,0 +1,17 @@
+<mat-form-field>
+  <mat-label>Select a week</mat-label>
+  <mat-date-range-input
+    [rangePicker]="picker.picker"
+    [dateFilter]="weekDayFilter"
+    disabled
+  >
+    <input matStartDate placeholder="Start date" [formControl]="startDate" />
+    <input matEndDate placeholder="End date" />
+  </mat-date-range-input>
+  <mat-datepicker-toggle
+    matSuffix
+    [for]="picker.picker"
+  ></mat-datepicker-toggle>
+  <matx-weekpicker #picker></matx-weekpicker>
+  <mat-hint>{{ startDate.value | isoWeek }}</mat-hint>
+</mat-form-field>
