@@ -1,0 +1,12 @@
+<span
+  style="position: absolute; bottom: 0"
+  [matxPopover]="{ templateRef: t, description: 'a picture of kitty' }"
+>
+  Hover this for well positioned popover
+</span>
+<span matTooltip="live nicely with mat tooltip"
+  >Hover this for Angular Material tooltip</span
+>
+<ng-template #t>
+  <img src="http://placekitten.com/g/200/300" alt="kitty!" />
+</ng-template>
