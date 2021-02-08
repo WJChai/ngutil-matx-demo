@@ -1,0 +1,11 @@
+<mat-autocomplete autoActiveFirstOption #auto>
+  <mat-option *ngFor="let option of options" [value]="option">
+    {{ option.title }}
+  </mat-option>
+  <mat-option *ngIf="loading" [disabled]="true">
+    <div class="loading-option">
+      <mat-spinner diameter="24"></mat-spinner> Loading...
+    </div>
+  </mat-option>
+  <mat-option *ngIf="emptyOption" [disabled]="true">No result found</mat-option>
+</mat-autocomplete>

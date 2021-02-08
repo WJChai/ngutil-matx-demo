@@ -1,0 +1,15 @@
+<mat-form-field class="example-full-width">
+  <mat-label>Angular material github issues</mat-label>
+  <input
+    type="text"
+    placeholder="Search by title"
+    aria-label="Angular material github issues"
+    matInput
+    [formControl]="control"
+    [matAutocomplete]="auto.autocomplete"
+  />
+  <app-github-issue-paginated-async-autocomplete
+    [searchText]="control.value"
+    #auto
+  ></app-github-issue-paginated-async-autocomplete>
+</mat-form-field>
