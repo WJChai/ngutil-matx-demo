@@ -31,6 +31,7 @@
     "@cwj0911/ngutil-refetch-on-stale": "0.0.2",
     "@cwj0911/ngutil-rxjs-operators": "0.0.3",
     "@cwj0911/ngutil-selectable-grid": "0.0.3",
+    "@cwj0911/ngutil-selection-list": "0.0.1",
     "moment": "^2.29.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",

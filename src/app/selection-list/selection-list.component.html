@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let x of items">
+    <input (click)="toggle(x)" type="checkbox" [name]="x.name" [id]="x.id" />
+    {{ x.name }}
+  </li>
+</ul>
+<p>{{ list.selected | json }}</p>
