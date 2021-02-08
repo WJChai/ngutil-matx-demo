@@ -1,0 +1,6 @@
+<p>
+  Refreshing browser will use cached time if not expired, but explicitly
+  invalidate this controller cache will trigger a re-fetch on the API
+</p>
+<button (click)="invalidate()">mark as stale</button>
+<p>{{ time$ | async }}</p>

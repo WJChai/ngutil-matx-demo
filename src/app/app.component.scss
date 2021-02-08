@@ -1,0 +1,12 @@
+div.page {
+  width: 100%;
+  display: flex;
+
+  div.nav {
+    width: 30%;
+  }
+
+  div.main {
+    width: 70%;
+  }
+}
