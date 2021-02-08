@@ -1,0 +1,8 @@
+<p>Manage the loading state so progress bar don't flicker on screen</p>
+<ul>
+  <li>if it set to on and off within 300ms, it won't show at all</li>
+  <li>if it is shown, it will retain at least 300ms</li>
+</ul>
+<button (click)="switch.on()">start loading</button>
+<button (click)="switch.off()">stop loading</button>
+<mat-progress-bar *ngIf="switch.isOn" mode="indeterminate"></mat-progress-bar>
