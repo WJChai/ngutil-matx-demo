@@ -1,0 +1,30 @@
+<h3>table</h3>
+<table ngutilSelectableGrid (selected)="updateTableSelected($event)">
+  <tr *ngFor="let r of [0, 1, 2, 3, 4]">
+    <td
+      *ngFor="let d of [0, 1, 2, 3, 4]"
+      ngutilSelectableGridCell
+      [selectableGridCellRow]="r"
+      [selectableGridCellCol]="d"
+    >
+      row {{ r }} col {{ d }}
+    </td>
+  </tr>
+</table>
+<p>{{ tableSelected }}</p>
+
+<h3>grid</h3>
+<div class="grid" ngutilSelectableGrid (selected)="updateGridSelected($event)">
+  <div class="grid-row" *ngFor="let r of [1, 2, 3, 4, 5]">
+    <div
+      class="grid-col"
+      *ngFor="let d of [1, 2, 3, 4, 5]"
+      ngutilSelectableGridCell
+      [selectableGridCellRow]="r"
+      [selectableGridCellCol]="d"
+    >
+      row {{ r }} col {{ d }}
+    </div>
+  </div>
+</div>
+<p>{{ gridSelected }}</p>
