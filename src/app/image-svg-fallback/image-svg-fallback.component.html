@@ -1,0 +1,37 @@
+<div class="container">
+  <div>
+    <p>Display image normally</p>
+    <img
+      src="http://placekitten.com/g/200/300"
+      ngutilImageSvgFallback
+      [fallbackOption]="{
+        text: 'KT',
+        fontColour: 'green',
+        backgroundColour: 'red'
+      }"
+      alt="kitty!"
+    />
+  </div>
+  <div>
+    <p>Fallback with option</p>
+    <img
+      src="http://not-a-real-website/deem-to-fail.jpg"
+      ngutilImageSvgFallback
+      [fallbackOption]="{
+        text: 'KT',
+        fontColour: 'green',
+        backgroundColour: 'red'
+      }"
+      alt="a broken image link"
+    />
+  </div>
+  <div>
+    <p>Fallback with svg</p>
+    <img
+      src="http://not-a-real-website/deem-to-fail.jpg"
+      ngutilImageSvgFallback
+      [fallbackSvg]="fallbackSvg"
+      alt="a broken image link"
+    />
+  </div>
+</div>
