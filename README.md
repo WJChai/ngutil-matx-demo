@@ -14,8 +14,9 @@ Demo for ngutil and matx
 - [Weekpicker](https://www.npmjs.com/package/@cwj0911/matx-weekpicker)
 - [Popover](https://www.npmjs.com/package/@cwj0911/matx-popover)
 - [Paginated async autocomplete](https://www.npmjs.com/package/@cwj0911/matx-paginated-async-autocomplete)
+- [Checkable async tree](https://www.npmjs.com/package/@cwj0911/matx-checkable-async-tree)
 
 ## todo
 
-- checkable-async-tree
 - interactive-walkthrough
+- onpush all components
