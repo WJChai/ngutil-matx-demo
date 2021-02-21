@@ -1,0 +1,19 @@
+<input type="text" matInput [formControl]="formControl" />
+<matx-checkable-async-tree
+  [treeNode]="treeNode"
+  [listOption]="listOption"
+  [database]="database"
+  [selectionList]="selectionList"
+  [query]="formControl.value"
+></matx-checkable-async-tree>
+<ng-template #treeNode let-item>
+  <div>{{ item.name }}</div>
+</ng-template>
+<ng-template #listOption let-item>
+  <div class="list-option">
+    <ng-container *ngFor="let x of getParentHierarchy(item); let isLast = last">
+      <span> {{ x.name }} </span>
+      <mat-icon *ngIf="!isLast">chevron_right</mat-icon>
+    </ng-container>
+  </div>
+</ng-template>
